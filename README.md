@@ -33,7 +33,7 @@ python test.py --ckpt_dir [YOUR_PATH_TRAINED_CHECKPOINTS] --test_dir [YOUR_PATH_
 
 ## 1. Network architecture of SSNet.
 
-![Fig1.pdf](assets/Fig1.pdf)
+![image0.png](assets/image0.png)
 
 ## 2. Average PSNR(dB) and SSIM of several methods for noise level of 15, 25, and 50 with 1, 2, and 4 watermarks on CBSD68 dataset.  
 
@@ -53,15 +53,15 @@ python test.py --ckpt_dir [YOUR_PATH_TRAINED_CHECKPOINTS] --test_dir [YOUR_PATH_
 
 ## 6. Visual results of several methods on an image from CBSD68 for noise level of 50 and one watermark.
 
-## ![Fig2.pdf](assets/Fig2.pdf)
+## ![image5.png](assets/image5.png)
 
 ## 7. Visual results of several methods on an image from Kodak24 for noise level of 25 and two watermarks.
 
-## ![Fig3.pdf](assets/Fig3.pdf)
+## ![image6.png](assets/image6.png)
 
 ### 8. Visual results of several methods on an image from LVW for noise level of 15 and four watermarks.
 
-![Fig4.pdf](assets/Fig4.pdf)
+![image7.png](assets/image7.png)
 
 
 
