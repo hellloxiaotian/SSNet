@@ -1,5 +1,6 @@
 ## This paper as well as  A self-supervised network for image denoising and watermark removal is conducted by Chunwei Tian, Jingyu Xiao, Bob Zhang, Wangmeng Zuo, Yudong Zhang, Tianruo Yang. This  paper is accepted by the Neural Networks 2024 (IF:8.4) and it is implemented by Pytorch. 
 
+## Its original paper can be obtained at https://ieeexplore.ieee.org/abstract/document/10464320 or https://arxiv.org/html/2403.05807v1.
 ## This paper is reported by 52CV (https://mp.weixin.qq.com/s/5zZ61eU5oWLiPc-Aopn82w).
 
 ## Its abstract is shown as follows.
