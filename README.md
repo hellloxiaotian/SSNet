@@ -24,9 +24,9 @@
 
 #### The training dataset of CBSD68, Kodak24, CLWD, and LVW can be obtained at https://pan.baidu.com/s/1sQ9CQgPGgjOKRZZiiQGSDw (ohfn) https://drive.google.com/drive/folders/19fCEPtyRYgExZMUQbkE6a5upROuU5Ckb?usp=drive_link (Google drive)
 
-### Test datasets
-
 ## Commands
+
+Download model file at https://pan.baidu.com/s/1pZQOjf6ZktjMGJuKbUPsjw  (passwd: hsvl)
 
 ### Train
 
