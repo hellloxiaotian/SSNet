@@ -1,11 +1,11 @@
-## This paper as well as  A self-supervised network for image denoising and watermark removal is conducted by Chunwei Tian, Jingyu Xiao, Bob Zhang, Wangmeng Zuo, Yudong Zhang, Tianruo Yang. This  paper is accepted by the Neural Networks 2024 (IF:8.4) and it is implemented by Pytorch. 
+**This paper as well as  A self-supervised network for image denoising and watermark removal is conducted by Chunwei Tian, Jingyu Xiao, Bob Zhang, Wangmeng Zuo, Yudong Zhang, Tianruo Yang. This  paper is accepted by the Neural Networks 2024 (IF:8.4) and it is implemented by Pytorch.**
 
-## Its original paper can be obtained at https://ieeexplore.ieee.org/abstract/document/10464320 or https://arxiv.org/html/2403.05807v1.
-## This paper is reported by 52CV (https://mp.weixin.qq.com/s/5zZ61eU5oWLiPc-Aopn82w).
+**Its original paper can be obtained at IEEE [Xplore](https://ieeexplore.ieee.org/abstract/document/10464320) or [arXiv](https://arxiv.org/html/2403.05807v1).**
+**This paper is reported by [52CV](https://mp.weixin.qq.com/s/5zZ61eU5oWLiPc-Aopn82w).**
 
 ## Its abstract is shown as follows.
 
-## In image watermark removal, popular methods depend on given reference non-watermark images in a supervised way. However, reference non-watermark images are difficult to obtain in the real world. At the same time, they often suffer from the influence of noise when captured by digital devices. To resolve these issues, in this paper, we present a self-supervised network for image denoising and watermark removal (SSNet). SSNet uses a parallel network in a self-supervised learning way to remove noise and watermarks. Specifically, each sub-network contains two subblocks. The upper sub-network uses the first sub-block to remove noise, according to noise-to-noise. Then, the second sub-block in the upper sub-network is used to remove watermarks, according to the distributions of watermarks. To prevent loss of important information, the lower sub-network is used to simultaneously learn noise and watermarks in a self-supervised learning way. Moreover, two sub-networks interact via attention to extract more complementary salient information. The proposed method does not depend on paired images to learn a blind denoising and watermark removal model, which is very meaningful for real applications. Also, it is more effective than the popular image watermark removal methods in public datasets. Codes can be found at https://github.com/hellloxiaotian/SSNet.
+In image watermark removal, popular methods depend on given reference non-watermark images in a supervised way. However, reference non-watermark images are difficult to obtain in the real world. At the same time, they often suffer from the influence of noise when captured by digital devices. To resolve these issues, in this paper, we present a self-supervised network for image denoising and watermark removal (SSNet). SSNet uses a parallel network in a self-supervised learning way to remove noise and watermarks. Specifically, each sub-network contains two subblocks. The upper sub-network uses the first sub-block to remove noise, according to noise-to-noise. Then, the second sub-block in the upper sub-network is used to remove watermarks, according to the distributions of watermarks. To prevent loss of important information, the lower sub-network is used to simultaneously learn noise and watermarks in a self-supervised learning way. Moreover, two sub-networks interact via attention to extract more complementary salient information. The proposed method does not depend on paired images to learn a blind denoising and watermark removal model, which is very meaningful for real applications. Also, it is more effective than the popular image watermark removal methods in public datasets. Codes can be found at https://github.com/hellloxiaotian/SSNet.
 
 ## Requirements (Pytorch)
 
@@ -18,15 +18,15 @@
 
 ### Training datasets
 
-#### The training dataset of the PASCAL VOV 2012 can be obtained at https://pan.baidu.com/s/1frkXU6zJPHaJUi-bbp3JGg (b345) or https://drive.google.com/drive/folders/19fCEPtyRYgExZMUQbkE6a5upROuU5Ckb?usp=drive_link (Google drive)
+#### The training dataset of the PASCAL VOV 2012 can be obtained at [Baidu Cloud](https://pan.baidu.com/s/1frkXU6zJPHaJUi-bbp3JGg) (pwd: b345) or [Google drive](https://drive.google.com/drive/folders/19fCEPtyRYgExZMUQbkE6a5upROuU5Ckb?usp=drive_link)
 
 ### Test datasets
 
-#### The training dataset of CBSD68, Kodak24, CLWD, and LVW can be obtained at https://pan.baidu.com/s/1AAGjCa7u5HK3F4QxmehOgw (1a5n) https://drive.google.com/drive/folders/19fCEPtyRYgExZMUQbkE6a5upROuU5Ckb?usp=drive_link (Google drive)
+#### The training dataset of CBSD68, Kodak24, CLWD, and LVW can be obtained at [Baidu Cloud](https://pan.baidu.com/s/1AAGjCa7u5HK3F4QxmehOgw) (pwd: 1a5n) or [Google drive](https://drive.google.com/drive/folders/19fCEPtyRYgExZMUQbkE6a5upROuU5Ckb?usp=drive_link)
 
 ## Commands
 
-Download model file at https://pan.baidu.com/s/1pZQOjf6ZktjMGJuKbUPsjw  (passwd: hsvl)
+Download model file at [Baidu Cloud](https://pan.baidu.com/s/1ZW9srk92VW75iAqlfSWe0g) (pwd: zbj5)
 
 ### Train
 
@@ -36,35 +36,36 @@ python train.py --data_path [YOUR_PATH_TO_TRAINING_DATA] --outf [YOUR_PATH_FOR_S
 
 python test.py --ckpt_dir [YOUR_PATH_TRAINED_CHECKPOINTS] --test_dir [YOUR_PATH_TO_TEST_DATA] --test_data [TEST_SET]
 
-## 1. Network architecture of SSNet.
+## Assets
+1. Network architecture of SSNet.
 
 ![image0.png](assets/image0.png)
 
-## 2. Average PSNR(dB) and SSIM of several methods for noise level of 15, 25, and 50 with 1, 2, and 4 watermarks on CBSD68 dataset.  
+2. Average PSNR(dB) and SSIM of several methods for noise level of 15, 25, and 50 with 1, 2, and 4 watermarks on CBSD68 dataset.  
 
 ![image1.png](assets/image1.png)
 
-## 3. Average PSNR(dB) and SSIM of several methods for noise level of 15, 25, and 50 with 1, 2, and 4 watermarks on Kodak24 dataset.  
+3. Average PSNR(dB) and SSIM of several methods for noise level of 15, 25, and 50 with 1, 2, and 4 watermarks on Kodak24 dataset.  
 
 ![image2.png](assets/image2.png)
 
-## 4. Average PSNR(dB) and SSIM of several methods for noise level of 15, 25, and 50 with 1, 2, and 4 watermarks on 100 images from CLWD dataset.
+4. Average PSNR(dB) and SSIM of several methods for noise level of 15, 25, and 50 with 1, 2, and 4 watermarks on 100 images from CLWD dataset.
 
 ![image3.png](assets/image3.png)
 
-## 5. Average PSNR(dB) and SSIM of several methods for noise level of 15, 25, and 50 with 1, 2, and 4 watermarks on 100 images from LVW dataset.
+5. Average PSNR(dB) and SSIM of several methods for noise level of 15, 25, and 50 with 1, 2, and 4 watermarks on 100 images from LVW dataset.
 
 ![image4.png](assets/image4.png)
 
-## 6. Visual results of several methods on an image from CBSD68 for noise level of 50 and one watermark.
+6. Visual results of several methods on an image from CBSD68 for noise level of 50 and one watermark.
 
-## ![image5.png](assets/image5.png)
+![image5.png](assets/image5.png)
 
-## 7. Visual results of several methods on an image from Kodak24 for noise level of 25 and two watermarks.
+7. Visual results of several methods on an image from Kodak24 for noise level of 25 and two watermarks.
 
-## ![image6.png](assets/image6.png)
+![image6.png](assets/image6.png)
 
-### 8. Visual results of several methods on an image from LVW for noise level of 15 and four watermarks.
+8. Visual results of several methods on an image from LVW for noise level of 15 and four watermarks.
 
 ![image7.png](assets/image7.png)
 
@@ -72,9 +73,11 @@ python test.py --ckpt_dir [YOUR_PATH_TRAINED_CHECKPOINTS] --test_dir [YOUR_PATH_
 
 ## You can cite this paper by the following ways.
 
-### 1. Tian C, Xiao J, Zhang B, et al. A self-supervised network for image denoising and watermark removal[J]. Neural Networks, 2024: 106218.
-
-### 2.@article{tian2024self,
+1. **Plain Text**   
+**Tian C, Xiao J, Zhang B, et al. A self-supervised network for image denoising and watermark removal[J]. Neural Networks, 2024: 106218.**  
+2. **BibTex**
+```
+@article{tian2024self,
   title={A self-supervised network for image denoising and watermark removal},
   author={Tian, Chunwei and Xiao, Jingyu and Zhang, Bob and Zuo, Wangmeng and Zhang, Yudong and Lin, Chia-Wen},
   journal={Neural Networks},
@@ -82,3 +85,4 @@ python test.py --ckpt_dir [YOUR_PATH_TRAINED_CHECKPOINTS] --test_dir [YOUR_PATH_
   year={2024},
   publisher={Elsevier}
 }
+```
