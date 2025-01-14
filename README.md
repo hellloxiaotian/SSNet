@@ -1,9 +1,9 @@
 **This paper as well as  A self-supervised network for image denoising and watermark removal is conducted by Chunwei Tian, Jingyu Xiao, Bob Zhang, Wangmeng Zuo, Yudong Zhang, Tianruo Yang. This  paper is accepted by the Neural Networks 2024 (IF:8.4) and it is implemented by Pytorch.**
 
-**Its original paper can be obtained at IEEE [Xplore](https://ieeexplore.ieee.org/abstract/document/10464320) or [arXiv](https://arxiv.org/html/2403.05807v1).**
+**Its original paper can be obtained at [IEEE Xplore](https://ieeexplore.ieee.org/abstract/document/10464320) or [arXiv](https://arxiv.org/html/2403.05807v1).**
 **This paper is reported by [52CV](https://mp.weixin.qq.com/s/5zZ61eU5oWLiPc-Aopn82w).**
 
-## Its abstract is shown as follows.
+## Abstract.
 
 In image watermark removal, popular methods depend on given reference non-watermark images in a supervised way. However, reference non-watermark images are difficult to obtain in the real world. At the same time, they often suffer from the influence of noise when captured by digital devices. To resolve these issues, in this paper, we present a self-supervised network for image denoising and watermark removal (SSNet). SSNet uses a parallel network in a self-supervised learning way to remove noise and watermarks. Specifically, each sub-network contains two subblocks. The upper sub-network uses the first sub-block to remove noise, according to noise-to-noise. Then, the second sub-block in the upper sub-network is used to remove watermarks, according to the distributions of watermarks. To prevent loss of important information, the lower sub-network is used to simultaneously learn noise and watermarks in a self-supervised learning way. Moreover, two sub-networks interact via attention to extract more complementary salient information. The proposed method does not depend on paired images to learn a blind denoising and watermark removal model, which is very meaningful for real applications. Also, it is more effective than the popular image watermark removal methods in public datasets. Codes can be found at https://github.com/hellloxiaotian/SSNet.
 
